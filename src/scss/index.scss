@@ -7,6 +7,7 @@ $primary_color: rgb(32, 32, 96);
 
 body {
   background: $background_color;
+  overflow-x: hidden;
 
 }
 
@@ -39,7 +40,7 @@ padding: 20px;
 
 #profile-info {
   display: flex;
-  margin-left: 20px;
+  margin-left: 30px;
   
   margin-top: 50px;
 
@@ -52,8 +53,12 @@ padding: 20px;
 }
 
 #profile-title {
-  font-size: larger;
+  font-size: 15px;
   font-weight: bolder;
+}
+
+#profile-stats {
+  font-size: 15px;
 }
 
 #profile-img {
@@ -63,11 +68,20 @@ padding: 20px;
   border-radius: 50%;
 }
 
+
+
 #hr {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid $primary_color;
+}
+
+
+#title-h1 {
+  text-align: center;
+  color: $primary_color;
+
 }
 
 
@@ -85,8 +99,21 @@ padding: 20px;
   margin: 20px;
 }
 
-#title-h1 {
-  text-align: center;
-  color: $primary_color;
-
+.card-img-top {
+  max-height: 150px;
+  object-fit: cover;
 }
+
+
+
+
+// feed page
+
+#search-form {
+
+  margin-left: 600px;
+}
+
+
+
+

@@ -18,13 +18,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/src/pages/feed.html">Feed</a>
+                <a class="nav-link active" aria-current="page" href="#">Feed</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/src/pages/profile.html">Profile</a>
+                <a class="nav-link" href="/src/pages/profile.html">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/index.html">Sign out</a>
+                <a class="nav-link" href="/index.html">Sign out</a>
               </li>
              
              
@@ -35,49 +35,71 @@
         </div>
       </nav>
 
+      <h1 id="title-h1" style="margin-top: 70px;">Feed</h1>
+<hr>
 
+      
+<div class="container">
+      <form class="row g-3" style="margin-left: 13%;">
 
-
-      <div class="container" id="profile-info">
+        <div class="col-auto">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Sort posts</option>
+                <option value="1">Date</option>
+                <option value="2">Likes</option>
+                <option value="3">Comments</option>
+              </select>
+        </div>
         
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="search" class="form-control" placeholder="Search">
+        </div>
+        <div class="col-auto">
+            <button type="button" class="btn" id="Add-post-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                New post
+              </button>
+        </div>
+      </form>
 
-        <img src="/src/assets/face-expressions-illustrations-emotions-feelings.jpg" id="profile-img">
-            
-      </img>
-     
 
-        <ul id="profile-ul">
-            <li id="profile-title">Username:</li>
-            <li id="profile-stats">Ola Nordmann</li>
-        </ul>
 
-        <ul id="profile-ul">
-            <li id="profile-title">Followers:</li>
-            <li id="profile-stats">159</li>
-        </ul>
-
-        <ul id="profile-ul">
-            <li id="profile-title">Following:</li>
-            <li id="profile-stats">79</li>
-            
-        </ul>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn" id="Add-post-btn">Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-   
-   
-    <hr id="hr">
+  
+  
+ 
     
     
 
 
 
-    <div id="card-container">
+    <div id="card-container" style="margin-top: 50px;">
 
         
-        <button class="btn" id="follow-btn">Follow</button>
+        
     
-        <h1 id="title-h1">User posts</h1>
+        
         <div class="row" id="card-row">
+
+          
 
             <div class="card">
                 <img class="card-img-top" src="/src/assets/23982.jpg" alt="Card image cap">
