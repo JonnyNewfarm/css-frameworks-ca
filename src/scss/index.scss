@@ -1,9 +1,9 @@
 
 $background_color: rgb(220, 233, 239);
-$primary_color: rgb(32, 32, 96);
+$primary: rgb(32, 32, 96);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "./buttons";
+
 
 body {
   background: $background_color;
@@ -19,7 +19,7 @@ body {
 margin-top: 30px;
 padding: 20px;
   max-width: 60%;
-  border: 1px solid $primary_color;
+  border: 1px solid $primary;
   border-radius: 20px;
   background: white;
 }
@@ -29,58 +29,30 @@ padding: 20px;
   text-align: center;
 }
 
-#form-link {
-  color: $primary_color;
-  
-}
+
 
 
 
 // Profile page
 
-#profile-info {
-  display: flex;
-  margin-left: 30px;
-  
-  margin-top: 50px;
 
-
-}
-
-#profile-ul {
-  list-style-type: none;
-  color: $primary_color;
-}
-
-#profile-title {
-  font-size: 15px;
-  font-weight: bolder;
-}
-
-#profile-stats {
-  font-size: 15px;
-}
 
 #profile-img {
   object-fit: cover;
-  height: 60px;
-  width: 60px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 }
 
 
 
-#hr {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid $primary_color;
-}
+
 
 
 #title-h1 {
   text-align: center;
-  color: $primary_color;
+  color: $primary;
+  margin-top: 50px;
 
 }
 
