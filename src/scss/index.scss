@@ -10,6 +10,8 @@ body {
 
 }
 
+// Sign in and register page
+
 
 
 #form-container {
@@ -31,3 +33,60 @@ padding: 20px;
   
 }
 
+
+
+// Profile page
+
+#profile-info {
+  display: flex;
+  margin-left: 20px;
+  
+  margin-top: 50px;
+
+
+}
+
+#profile-ul {
+  list-style-type: none;
+  color: $primary_color;
+}
+
+#profile-title {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#profile-img {
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $primary_color;
+}
+
+
+
+// cards for feed and profile page
+
+#card-row {
+  justify-content: center;
+  
+}
+
+
+.card {
+  width: 18rem;
+  margin: 20px;
+}
+
+#title-h1 {
+  text-align: center;
+  color: $primary_color;
+
+}
