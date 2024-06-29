@@ -68,7 +68,7 @@ padding: 20px;
 
 .card {
   width: 18rem;
-  margin: 20px;
+  
 }
 
 .card-img-top {
@@ -84,6 +84,27 @@ padding: 20px;
 #search-form {
 
   margin-left: 600px;
+}
+
+
+
+//footer
+
+#footer {
+  background: $primary;
+  height: 150px;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+#footer-icon {
+  height: 100px;
+  width: 100px;
+  
 }
 
 
